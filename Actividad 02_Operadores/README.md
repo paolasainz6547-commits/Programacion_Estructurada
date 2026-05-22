@@ -14,10 +14,10 @@ de incremento/decremento y relacionales.
 
 ## Ejercicios
 
-- **Ejercicio 1:** Uso de `++` y `--` en una expresión 
+- **Ejercicio 1:** Uso de ++ y -- en una expresión 
 - **Ejercicio 2:** Diferencia entre la procedencia de los operadores artimeticos 
 - **Ejercicio 3:** Diferencia entre i++ (postincremento) y ++i (preincremento)
-- **Ejercicio 4:** División con resultado flotante usando `%.2f`
+- **Ejercicio 4:** División con resultado flotante usando %.2f
 - **Ejercicio 5:** Comparación de dos valores con if y else
 
 ## Compilación
