@@ -1,6 +1,5 @@
 # Actividad: Operadores
 ## Descripción
-## Descripción
 Programa en C que practica el uso de operadores aritméticos,
 de incremento/decremento y relacionales.
 
