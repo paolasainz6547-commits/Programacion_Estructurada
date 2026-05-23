@@ -30,31 +30,24 @@ de caracteres con operaciones son cadenas de caracteres.
   se recorre línea por línea con `fgets`, se localiza la línea `"El nombre es:"` con `strstr`
   y se extrae el nombre saltando los primeros 14 caracteres con aritmética de punteros (`Rnombre + 14`).
 
-- **funciones_strings.c:** Programa que demuestra tres formas distintas de leer
-  y manejar cadenas en C. Su funcionamiento es que en primer ejemplo usa `scanf` para leer una sola palabra
-  por nombre, con la caracteristica de que `scanf` no lee espacios. El segundo ejemplo
-  usa `fgets` para leer nombre y apellido completos, eliminando el salto de linea propio de la funcion
-  `'\n'` con `strcspn`. El tercer ejemplo usa un arreglo bidimensional para registrar 4 jugadores
-  en un ciclo `for`. Una vez capturados, se comparan los dos primeros
-  con `strcmp` para verificar si tienen el mismo nombre, esta funcion arroja verdadero o falso (1 o 0).
+- **funciones_strings.c:** Programa que demuestra tres formas de leer
+  y manejar cadenas en C.  El primer ejemplo usa `scanf`, que solo lee hasta el primer espacio, por lo que no captura
+  nombre completo. El segundo ejemplo usa `fgets` para leer nombre y apellido completos, eliminando el `'\n'` automático
+  con `strcspn`. El tercer ejemplo usa un arreglo bidimensional para registrar 4 jugadores
+  en un ciclo `for`, compara los dos primeros con `strcmp` (devuelve `0` si son iguales)
   Se recorre el arreglo para imprimir cada jugador junto con la longitud de su nombre usando `strlen`.
   Funcion la cual lee y devuelve el número exacto de caracteres que componen al string, incluyendo espacios, y construye 
- un nombre de equipo completo usando `strcpy` para inicializar la cadena
-  base y múltiples llamadas a `strcat` para concatenar los nombres de los 4 jugadores
-  con separadores `, ` y ` y `.
-
+  un nombre de equipo completo usando `strcpy` para inicializar la cadena
+  base y se usa `strcat` para concatenar los nombres de los 4 jugadores.
+  
 - **arreglos_y_direcciones.c:** Programa que combina captura de cadenas, concatenación
-  y direcciones de memoria. Se declara `char lista[4][20]` para almacenar
-  4 nombres ingresados por el usuario con `fgets` en un ciclo. Luego se construye
-  un nombre completo usando `strcat` con espacios entre nombres pero
-  sin espacio al final, controlado con una condición `if (i < N - 1)`. Después se
-  imprimen las direcciones de memoria de cada fila del arreglo de nombres usando `&lista[i]`,
-  en terminal esto se ve reflejado como un salto de 20 bytes entre cada cadena,
-   ya que cada char ocupa 1 byte, cada bloque lista[i]
-  ocupa 20 bytes en memoria.
-  Por último se declara `int ArregloC[5] = {1,2,3,4,5}` y se imprime el valor
-  y la dirección de cada elemento, mostrando cómo los enteros se almacenan de forma
-  consecutiva en memoria con una separación de 4 bytes entre cada uno, debido al tamaño de un int (4 bytes)
+  y direcciones de memoria. Se capturan 4 nombres en `char lista[4][20]`
+  con `fgets` y se concatenan en una sola cadena `NC` (Nombre completo) usando `strcat`, agregando espacios
+  entre nombres pero no al final con `if (i < N - 1)`. Luego se imprimen las direcciones
+  de memoria de cada nombre con `&lista[i]`,en terminal esto se ve reflejado como un salto de 20 bytes entre cada cadena,
+   ya que cada char ocupa 1 byte, cada bloque lista[i] ocupa 20 bytes en memoria.
+  Finalmente con `int ArregloC[5]` se imprime el valor y dirección de cada
+  elemento, evidenciando que los enteros se almacenan con 4 bytes de separación entre cada uno, debido al tamaño de un int (4 bytes).
 
 ## Compilación
 ```bash
