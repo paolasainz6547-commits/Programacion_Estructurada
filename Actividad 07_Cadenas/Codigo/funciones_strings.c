@@ -56,7 +56,7 @@ int main()
         printf("\nJugador %d: %s (longitud: %d)", i + 1, jugadores[i], longitud);
     }
 
-    // Construccion del nombre del equipo
+    // Nombre completo del equipo
     strcpy(NE, "Equipo Battle Ship: ");
     strcat(NE, jugadores[0]);
     strcat(NE, ", ");
