@@ -56,12 +56,6 @@ int main()
 
     v=(int*)malloc(5*sizeof(int));
     free(v);
-
-
-
+    
     return 0;
-
-
-
-
 }
