@@ -1,25 +1,22 @@
-include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
 int main()
 {
-    char alumno1[16];
-    char alumno2[16];
+    char alumno1[20];
+    char alumno2[20];
     char jugadores[4][20];
     int i, longitud;
     char NE[100];
 
     /* Ejemplo 1 utilizando scanf (Comentado)
-    
     printf("\nIngrese el nombre del alumno 1: ");
     scanf("%s", alumno1);
     printf("El nombre del alumno 1 es: %s\n", alumno1);
-
     printf("\nIngrese el nombre del alumno 2: ");
     scanf("%s", alumno2);
     printf("El nombre del alumno 2 es: %s\n", alumno2);
-
     getchar(); // limpiar el buffer antes de fgets */
 
     printf("---- Registro de alumnos ----\n");
@@ -37,45 +34,40 @@ int main()
 
     printf("---- Registro de jugadores ----\n");
 
-
     // Ejemplo 3 usando arreglos de caracteres
     for (i = 0; i < 4; i++)
     {
-        printf("-> Ingrese el nombre del jugador %d: ", i + 1);
+        printf("Ingrese el nombre del jugador %d: ", i + 1);
         fgets(jugadores[i], sizeof(jugadores[i]), stdin);
-
         jugadores[i][strcspn(jugadores[i], "\n")] = '\0';
     }
 
     if (strcmp(jugadores[0], jugadores[1]) == 0)
-    {
-        printf ("\n El jugador[0] y el jugador [1] se llaman igual");
-    }
+        printf("\nEl jugador 1 y el jugador 2 se llaman igual\n");
     else
-    {
-        printf ("\nLos nombres han sido registrados correctamente");
-    }
+        printf("\nLos nombres han sido registrados correctamente\n");
+
     printf("\n---- Lista final de jugadores ----\n");
 
-
-    // Funcion para mostrar la longitud del string
-    for (i=0; i<4; i++) //Funcion para mostrar la longuitud del string
+    // Mostrar jugadores con longitud
+    for (i = 0; i < 4; i++)
     {
         longitud = strlen(jugadores[i]);
         printf("\nJugador %d: %s (longitud: %d)", i + 1, jugadores[i], longitud);
     }
 
-    strcpy (NE, "Equipo Battle Ship: ");
-
+    // Construccion del nombre del equipo
+    strcpy(NE, "Equipo Battle Ship: ");
     strcat(NE, jugadores[0]);
-    strcat(NE, ",");
+    strcat(NE, ", ");
     strcat(NE, jugadores[1]);
-    strcat(NE, ",");
+    strcat(NE, ", ");
     strcat(NE, jugadores[2]);
     strcat(NE, " y ");
     strcat(NE, jugadores[3]);
 
-    printf ("\n Los nombres del equipo son : %s \n", NE);
+    printf("\n%s\n", NE);
 
     return 0;
 }
+
