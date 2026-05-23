@@ -13,7 +13,7 @@ void capturar (int v[], int n)
     }
 }
 
-void mostar (int v[], int n)
+void mostar (int v[], int n) // Funcion para capturar los datos en el arreglo
 {
     int i;
     printf("\nEl arreglo es:\n");
@@ -23,7 +23,7 @@ void mostar (int v[], int n)
     }
 }
 
-int filtar (int origen[], int destino[], int n)
+int filtar (int origen[], int destino[], int n) // Funcion para filtrar numeros impares
 {
     int impares=0,i;
     for (i=0; i<n; i++)
@@ -40,7 +40,7 @@ int filtar (int origen[], int destino[], int n)
     return impares;
 }
 
-int multiplos_de_tres (int origen[], int destino[], int n)
+int multiplos_de_tres (int origen[], int destino[], int n) 
 {
     int multi=0, i;
     for (i=0; i<n; i++)
