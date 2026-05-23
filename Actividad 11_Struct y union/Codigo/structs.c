@@ -60,15 +60,7 @@ for (i=0; i<3; i++)
         scanf("%d", &alumnos[i].cal);
         getchar();
 
-
-
     }
-
-
-
-
-
-
 
     return 0;
 }
