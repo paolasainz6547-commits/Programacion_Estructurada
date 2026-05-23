@@ -1,0 +1,7 @@
+-- Tablero 3x3 ---
+123
+456
+789
+
+Paola Sofia Sainz Barrios
+El nombre es: Paola Sofia Sainz Barrios
