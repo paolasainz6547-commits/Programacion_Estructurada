@@ -22,6 +22,7 @@ void capturar (int m[3][3])  //Funcion de recorrido basico
     {
         for (j=0; j<3; j++)
         {
+            printf("Elemento [%d][%d]: ", i, j);
             scanf("%d", &m[i][j]);
         }
         printf ("\n");
@@ -37,7 +38,7 @@ int diagonal (int m[3][3])
     {
         suma+=m[i][i];
     }
-    printf ("La suma es: %d ",suma);
+    printf ("\nLa suma de la diagonal es: %d ",suma);
 
     return suma;
 }
@@ -49,7 +50,8 @@ int main()
 
     int m[3][3];
     int i, j, suma;
-    printf ("\n Ingrese la matriz: ");
+    printf ("\n---Ingrese la matriz---\n");
+    printf ("\n");
     capturar(m);
     mostrar(m);
     suma = diagonal(m);
@@ -73,5 +75,7 @@ int main()
         fclose(archivo);
     }
     return 0;
+
+}
 
 }
