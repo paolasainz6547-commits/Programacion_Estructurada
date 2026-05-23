@@ -22,27 +22,24 @@ de caracteres con operaciones son cadenas de caracteres.
 
 ## Ejercicios
 
-- **tablero_y_strings.c:** Programa que combina el uso de matrices de caracteres
-  con manejo de archivos y extracción de cadenas. Se declara una matriz `char tablero[5][5]`
-  inicializada completamente con el carácter `'~'` usando ciclos `for` anidados,
-  Luego se asignan los caracteres (`'B'`, `'X'`, `'O'`) a las coordenadas de la matriz usando índices `[fila][columna]`,
-  y el tablero se imprime en consola. El usuario ingresa su nombre con `fgets` y se usa `strcspn` para eliminar el salto
-  de línea automático. El nombre y el tablero se escriben en `tablero.txt` con `fprintf`.
-  Despues el archivo se reabre en modo lectura (`"r"`), se lee línea por línea
-  con `fgets` y se usa `strstr` para buscar la línea que contiene `"El nombre es:"`,
-  extrayendo el nombre con aritmética de punteros (`Rnombre + 14`) para saltar
-  los primeros 14 caracteres del titulo del archivo.
+- **tablero_y_strings.c:** Programa que combina matrices de caracteres con manejo de archivos.
+  Se declara `char tablero[5][5]` inicializada con `'~'` usando ciclos anidados, luego se
+  asignan los caracteres `'B'`, `'X'` y `'O'` a celdas específicas por índice `[fila][columna]`
+  y se imprime en consola. El nombre del usuario se lee con `fgets` y se limpia con `strcspn`.
+  Todo se escribe en `tablero.txt` con `fprintf`. Al reabrir el archivo en modo lectura,
+  se recorre línea por línea con `fgets`, se localiza la línea `"El nombre es:"` con `strstr`
+  y se extrae el nombre saltando los primeros 14 caracteres con aritmética de punteros (`Rnombre + 14`).
 
 - **funciones_strings.c:** Programa que demuestra tres formas distintas de leer
-  y manejar cadenas en C. El primer ejemplo usa `scanf` para leer una sola palabra
+  y manejar cadenas en C. Su funcionamiento es que en primer ejemplo usa `scanf` para leer una sola palabra
   por nombre, con la caracteristica de que `scanf` no lee espacios. El segundo ejemplo
   usa `fgets` para leer nombre y apellido completos, eliminando el salto de linea propio de la funcion
   `'\n'` con `strcspn`. El tercer ejemplo usa un arreglo bidimensional para registrar 4 jugadores
   en un ciclo `for`. Una vez capturados, se comparan los dos primeros
   con `strcmp` para verificar si tienen el mismo nombre, esta funcion arroja verdadero o falso (1 o 0).
   Se recorre el arreglo para imprimir cada jugador junto con la longitud de su nombre usando `strlen`.
-  Funcion la cual lee y devuelve el número exacto de caracteres que componen al string, incluyendo espacios
-  Finalmente se construye un nombre de equipo completo usando `strcpy` para inicializar la cadena
+  Funcion la cual lee y devuelve el número exacto de caracteres que componen al string, incluyendo espacios, y construye 
+ un nombre de equipo completo usando `strcpy` para inicializar la cadena
   base y múltiples llamadas a `strcat` para concatenar los nombres de los 4 jugadores
   con separadores `, ` y ` y `.
 
