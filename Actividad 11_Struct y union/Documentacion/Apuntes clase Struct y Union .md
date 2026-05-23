@@ -1,4 +1,5 @@
 # Struct y Union
+-  (Extraido desde Notion)
 
 En C se indica el numero de filas y columnas para calcular correctamente el espacio de memoria
 
