@@ -7,7 +7,6 @@ int main()
     char alumno1[16];
     char alumno2[16];
     char jugadores[4][20];
-    char equipo[100];
     int i, longitud;
     char NE[100];
 
@@ -60,7 +59,7 @@ int main()
 
 
     // Funcion para mostrar la longitud del string
-    for (int i=0; i<4; i++) //Funcion para mostrar la longuitud del string
+    for (i=0; i<4; i++) //Funcion para mostrar la longuitud del string
     {
         longitud = strlen(jugadores[i]);
         printf("\nJugador %d: %s (longitud: %d)", i + 1, jugadores[i], longitud);
