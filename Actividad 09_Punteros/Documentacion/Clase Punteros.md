@@ -1,5 +1,5 @@
 # Clase Punteros
-
+- (Extraido desde Notion)
 Operador ternario 
 
 C=a<b? 100 (V) : 0 (F)
