@@ -119,9 +119,7 @@ int main()
             valor= destino[i];
             fprintf(archivo,"%d ", valor);
         }
-
-
-
+        
         fclose(archivo);
     }
 
