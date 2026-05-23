@@ -56,4 +56,4 @@ gcc main.c -o programa
 ## Ejecución
 ```bash
 ./programa
-```Sonnet 4.6
+
