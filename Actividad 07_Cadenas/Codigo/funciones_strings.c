@@ -10,7 +10,7 @@ int main()
     int i, longitud;
     char NE[100];
 
-    /* Ejemplo 1 utilizando scanf (Comentado)
+    // Ejemplo 1 utilizando scanf (Comentado)
     printf("\nIngrese el nombre del alumno 1: ");
     scanf("%s", alumno1);
     printf("El nombre del alumno 1 es: %s\n", alumno1);
