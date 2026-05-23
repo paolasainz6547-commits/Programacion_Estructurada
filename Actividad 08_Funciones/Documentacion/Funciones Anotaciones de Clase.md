@@ -1,5 +1,5 @@
 # Funciones/Anotaciones de Clase
-
+(Extraido desde Notion)
 Creadas: 17 de abril de 2026 7:15
 Asignatura: Programación Estructurada
 
