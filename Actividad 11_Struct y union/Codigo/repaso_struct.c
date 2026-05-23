@@ -34,7 +34,7 @@ int main()
     printf("Peso: %d kg\n", Totopo.peso);
     printf("Tripulacion inicial: %d\n\n", Totopo.tripulacion);  //Impredsion en pantalla de los campos 
 
-    printf("Bajando tripulantes...\n"); //Uso de la funcion recursiva 
+    printf("Bajando tripulantes: \n"); //Uso de la funcion recursiva 
     struct Barco *p = &Totopo;
     f_bajan(p);
 
