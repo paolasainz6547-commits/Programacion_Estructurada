@@ -9,7 +9,7 @@ void mostrar (int m[3][3])
 
         for (j=0; j<3; j++)
         {
-            printf ("%d", m[i][j]);
+            printf("%d ", m[i][j]);
         }
         printf ("\n");
     }
