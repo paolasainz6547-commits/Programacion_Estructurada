@@ -4,40 +4,42 @@
 
 int main()
 {
-    int i, N=4;
-    char lista [4][20];
-    char NC [100];
-    int ArregloC[5]= {10, 20, 30, 40, 50};
+    int i, N = 4;
+    char lista[4][20];
+    char NC[100];
+    int ArregloC[5] = {1, 2, 3, 4, 5};
 
-    for (i = 0; i<N; i++)
+    //Captura de nombres
+    for (i = 0; i < N; i++)
     {
-        printf("Ingrese su nombre %d: ",i+1);
+        printf("Ingrese su nombre %d: ", i + 1);
         fgets(lista[i], sizeof(lista[i]), stdin);
         lista[i][strcspn(lista[i], "\n")] = '\0';
     }
 
+    //Nombre completo
     NC[0] = '\0';
 
-    for (i=0; i<N; i++) // bucle para imprimir el nombre completo
+    for (i = 0; i < N; i++)
     {
         strcat(NC, lista[i]);
-        strcat(NC, " ");
+        if (i < N - 1)
+            strcat(NC, " "); // Espacio solo entre nombres, no al final
     }
 
     printf("\nSu nombre completo es: %s\n", NC);
 
-    for (i=0; i<5; i++)
+    //Direcciones de arreglo de nombres
+    for (i = 0; i < N; i++)
     {
-        printf ("\nLa direccion del nombre 1 es: %d\n", lista[i+1]);
-
+        printf ("\nLa direccion del nombre %d es: %i\n", i+1, &lista[i]);
     }
 
-    ////Codigo con arreglos de numeros
-
-    for (i=0; i<5; i++)
+    //Arreglo de numeros
+    printf("\n");
+    for (i = 0; i < 5; i++)
     {
-        printf("\nValor: %d, Direccion: %d\n", ArregloC[i], &ArregloC[i]);
-
+         printf("\nValor: %d, Direccion: %d\n", ArregloC[i], &ArregloC[i]);
     }
 
     return 0;
