@@ -19,13 +19,20 @@ para la toma de decisiones segun las diferentes condiciones y criterios.
 - **Ejercicio 3:** Evaluar si se es apto para beca o reinscripción según promedio y materias reprobadas. Utilizando el operador logico `||` para evaluar que dos condiciones sean verdaderas.
 - **Ejercicio 4:** Verificar si se obtiene beca según promedio mínimo de 85 y cero materias reprobadas. Utilizando operadores logicos. 
 
-
 ## Compilación
 ```bash
-gcc main.c -o programa
+gcc mayor_de_edad.c -o mayor_de_edad
+gcc menu_switch.c -o menu_switch
+gcc par_impar_primo.c -o par_impar_primo
+gcc promedio_y_beca.c -o promedio_y_beca
+gcc validacion_academica.c -o validacion_academica
 ```
 
 ## Ejecución
 ```bash
-./programa
+./mayor_de_edad
+./menu_switch
+./par_impar_primo
+./promedio_y_beca
+./validacion_academica
 ```
