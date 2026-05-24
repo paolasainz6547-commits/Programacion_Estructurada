@@ -17,7 +17,7 @@ cadenas y extracción de datos desde un archivo externo.
 
 ## Ejercicio
 
-- **archivos.c:** Programa que demuestra el ciclo completo de escritura y
+- **Codigo 1 (archivos.c):** Programa que demuestra el ciclo completo de escritura y
   lectura de un archivo en C. Se declara `char tablero[5][5]` inicializado
   con `'~'` usando ciclos anidados, y se asignan los caracteres `'B'`, `'X'`
   y `'O'` a celdas específicas por índice `[fila][columna]`. El tablero se
@@ -35,10 +35,10 @@ cadenas y extracción de datos desde un archivo externo.
 
 ## Compilación
 ```bash
-gcc archivos.c -o programa
+gcc archivos.c -o archivos
 ```
 
 ## Ejecución
 ```bash
-./programa
+./archivos
 ```
