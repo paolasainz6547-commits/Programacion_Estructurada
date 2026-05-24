@@ -17,7 +17,7 @@ funciones recursivas y manejo de memoria dinámica.
 
 ## Ejercicios
 
-- **struct.c:** Programa introductorio al uso de `struct` en C. Se declara
+- **Codigo 1 (struct.c):** Programa introductorio al uso de `struct` en C. Se declara
   `struct alumno` con campos de nombre, edad y calificación, y se captura
   un alumno individual con `fgets` y `scanf`. Luego se declara `struct grupo`
   con los mismos campos y se usa un arreglo `alumnos[3]` para registrar 3
@@ -25,7 +25,7 @@ funciones recursivas y manejo de memoria dinámica.
   El programa demuestra cómo un `struct` permite agrupar datos de tipos distintos
   bajo un mismo identificador y trabajarlos como una sola unidad.
 
-- **repaso_struct.c:** Programa de repaso que combina `struct` con función
+- **Codigo 2 (repaso_struct.c):** Programa de repaso que combina `struct` con función
   recursiva y punteros. Se declara `struct Barco` con campos de nombre, peso
   y tripulación, asignados directamente en `main`. La función `f_bajan` recibe
   un puntero `struct Barco *p` y resta 2 tripulantes por cada llamada usando
@@ -33,32 +33,25 @@ funciones recursivas y manejo de memoria dinámica.
   La función se llama a sí misma hasta que la tripulación llega a 0, imprimiendo
   la tripulacion restante en cada iteracion.
 
-- **struct_y_union.c:** Programa que compara el comportamiento de `struct`
-  y `union` en memoria. Con `sizeof` se muestra que el `struct Barco` ocupa
-  la suma de todos sus campos, mientras que `union IdentificadorBarco` ocupa
-  solo el espacio del campo más grande, ya que todos comparten la misma
-  dirección de memoria. Se demuestra el uso incorrecto de union asignando los
-  tres campos a la vez, lo que corrompe los valores anteriores debido a que se sobreescribe
-  sobre el mismo espacio de memoria por el funcionamiento de union.
-  El uso correcto mostrado es asignar y leer un
-  solo campo a la vez. También incluye la función recursiva para el conteo de tripulacion hasta 0.
-
-- **struct_punteros_memoria.c:** Programa que demuestra el ciclo completo
-  de memoria dinámica aplicado a structs. Con `malloc` se reserva espacio
-  para un solo `struct Barco` y se accede a sus campos con `->`. Con `calloc`
-  se reserva una flota de 3 barcos inicializados automáticamente en 0,
-  evidenciando la diferencia con `malloc` que no inicializa la memoria.
-  Con `realloc` se amplía la flota de 3 a 5 barcos sin perder los datos
-  anteriores, agregando 2 nuevos barcos al espacio extendido. Finalmente
-  `free` libera toda la memoria reservada, mostrando el uso completo
-  de reserva, uso y liberación de memoria dinámica con structs.
+- **Codigo 3 (union.c):** Programa introductorio al uso de `union` en C. Se declara
+  `union Barco` con dos campos: `tripulacion` (int) y `carga` (float),
+  ambos de 4 bytes. A diferencia del `struct`, todos los campos de una
+  `union` comparten la misma dirección de memoria, por lo que solo un campo
+  puede tener un valor válido a la vez. El programa demuestra esto asignando
+  primero `tripulacion = 10` e imprimiéndolo correctamente, luego asignando
+  `carga = 500.5`, lo que sobrescribe el valor anterior al usar la misma
+  celda de memoria, dejando `tripulacion` con un valor corrputo.
 
 ## Compilación
 ```bash
-gcc main.c -o programa
+gcc repaso_struct.c -o repaso_struct
+gcc struct.c -o struct
+gcc union.c -o union
 ```
 
 ## Ejecución
 ```bash
-./programa
+./repaso_struct
+./struct
+./union
 ```
