@@ -14,7 +14,7 @@ referencia, funciones recursivas y manejo de memoria dinámica.
 
 ## Ejercicios
 
-- **punteros.c:** Programa que demuestra el funcionamiento de punteros en C
+- **Codigo 1 (punteros.c):** Programa que demuestra el funcionamiento de punteros en C
   a través de varias funciones. Primero se declara `int *p` y se asigna la
   dirección de `x` con `p = &x`, luego se imprime el valor de `x` directamente,
   su dirección de memoria a través del puntero y su valor por desreferencia `*p`,
@@ -35,12 +35,17 @@ referencia, funciones recursivas y manejo de memoria dinámica.
   5 enteros con `(int*)malloc(5 * sizeof(int))` y se libera inmediatamente
   con `free(v)`, mostrando el ciclo básico de reserva y liberación de memoria.
 
+  -**Codigo 2 (punteros introduccion.c)** Programa para introducir la logica de punteros con la asignacion de un puntero a una variable y
+  operador de desreferencia par obtener su valor 
+  
 ## Compilación
 ```bash
-gcc punteros.c -o programa
+gcc punteros.c -o punteros
+gcc punteros_introduccion.c -o punteros_introduccion
 ```
 
 ## Ejecución
 ```bash
-./programa
+./punteros
+./punteros_introduccion
 ```
