@@ -46,12 +46,11 @@ Cada celda almacena un valor entero que representa su estado:
   el ID, jugadores, marcador y si están terminadas o en curso.
 
 ## Archivos generados
-
-| Archivo | Contenido |
-|---------|-----------|
-| `partidas.dat` | Estado de todas las partidas (lectura/escritura con `fwrite`) |
-| `movimientos.txt` | Log de cada disparo con hora, jugador, coordenadas y resultado |
-| `resumen_<id>.txt` | Resumen final de la partida con tableros y ganador |
+El programa genera tres archivos: `partidas.dat` que almacena el estado
+binario de todas las partidas con `fread` y `fwrite`, `movimientos.txt`
+que registra cada disparo con hora, jugador, coordenadas y resultado, y
+`resumen_<id>.txt` que exporta el resumen final de la partida con los
+tableros y el ganador.
 
 ## Compilación
 ```bash
