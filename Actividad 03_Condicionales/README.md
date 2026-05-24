@@ -12,7 +12,7 @@ para la toma de decisiones segun las diferentes condiciones y criterios.
 - Operadores lógicos
 - Ciclo `for` para validación de números primos
 
-## Ejercicios
+## Ejercicios aplicados en los codigos de Condicionales 
 
 - **Ejercicio 1:** Verificar si una persona es mayor o menor de edad según su edad ingresada, evaluando la condicion de que el numero ingresado sea igual o mayor a 18, si la condicion es valida, es mayor de edad, de lo contario es menor de edad.
 - **Ejercicio 2:** Determinar si un número es par o impar, utilizando el operador `%` el cual evalua el residuo de la division entre 2, si es 0, es par, de lo contario, es impar. Evaluar si un numero es primo. 
