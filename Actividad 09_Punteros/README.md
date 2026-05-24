@@ -35,7 +35,7 @@ referencia, funciones recursivas y manejo de memoria dinámica.
   5 enteros con `(int*)malloc(5 * sizeof(int))` y se libera inmediatamente
   con `free(v)`, mostrando el ciclo básico de reserva y liberación de memoria.
 
-  -**Codigo 2 (punteros introduccion.c)** Programa para introducir la logica de punteros con la asignacion de un puntero a una variable y
+  - **Codigo 2 (punteros introduccion.c)** Programa para introducir la logica de punteros con la asignacion de un puntero a una variable y
   operador de desreferencia par obtener su valor 
   
 ## Compilación
