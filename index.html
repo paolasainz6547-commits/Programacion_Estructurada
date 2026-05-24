@@ -245,8 +245,9 @@
             font-weight: 600;
             text-decoration: none;
             transition: all 0.15s;
+            cursor: pointer;
         }
-        .btn-primary { background: var(--blue); color: white; }
+        .btn-primary { background: var(--blue); color: white; border: none; }
         .btn-primary:hover { background: #1d4ed8; }
         .btn-secondary { background: var(--white); color: var(--gray-700); border: 1px solid var(--gray-200); }
         .btn-secondary:hover { border-color: var(--gray-400); background: var(--gray-50); }
@@ -347,7 +348,7 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_01/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2001_Tipos%20de%20Datos/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2001_Tipos%20de%20Datos/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -390,7 +391,7 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_02/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2002_Operadores/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2002_Operadores/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -438,7 +439,7 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_03/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2003_Condicionales/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2003_Condicionales/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -482,7 +483,7 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_04/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2004_Ciclos/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2004_Ciclos/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -523,7 +524,7 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_05/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2005_Arreglos/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2005_Arreglos/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -565,9 +566,9 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_06/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2006_Matrices/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Doc. General (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2006_Matrices/Documentacion/BATTLESHIP%20(1).pdf" target="_blank">Ver Battleship (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2006_Matrices/Codigo/resultado.txt" target="_blank">Ver resultado.txt</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2006_Matrices/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Doc. General (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2006_Matrices/Documentacion/BATTLESHIP%20(1).pdf&embedded=true', 'BATTLESHIP (1).pdf', 'pdf')">Ver Battleship (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2006_Matrices/Codigo/resultado.txt', 'resultado.txt', 'txt')">Ver resultado.txt</button>
                 </div>
             </div>
         </div>
@@ -610,8 +611,8 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_07/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2007_Cadenas/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2007_Cadenas/Codigo/tablero.txt" target="_blank">Ver tablero.txt</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2007_Cadenas/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2007_Cadenas/Codigo/tablero.txt', 'tablero.txt', 'txt')">Ver tablero.txt</button>
                 </div>
             </div>
         </div>
@@ -656,9 +657,9 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_08/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2008_Funciones/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2008_Funciones/Documentacion/Funciones%20Anotaciones%20de%20Clase.md" target="_blank">Ver Apuntes (MD)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2008_Funciones/Codigo/resultado.txt" target="_blank">Ver resultado.txt</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2008_Funciones/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2008_Funciones/Documentacion/Funciones%20Anotaciones%20de%20Clase.md', 'Funciones Anotaciones de Clase.md', 'md')">Ver Apuntes (MD)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2008_Funciones/Codigo/resultado.txt', 'resultado.txt', 'txt')">Ver resultado.txt</button>
                 </div>
             </div>
         </div>
@@ -699,8 +700,8 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_09/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2009_Punteros/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2009_Punteros/Documentacion/Apuntes%20clase%20punteros.md" target="_blank">Ver Apuntes (MD)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2009_Punteros/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2009_Punteros/Documentacion/Apuntes%20clase%20punteros.md', 'Apuntes clase punteros.md', 'md')">Ver Apuntes (MD)</button>
                 </div>
             </div>
         </div>
@@ -740,7 +741,7 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_10/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2010_Memoria%20dinamica/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2010_Memoria%20dinamica/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -783,8 +784,8 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_11/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2011_Struct%20y%20union/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2011_Struct%20y%20union/Documentacion/Apuntes%20clase%20Struct%20y%20Union%20....md" target="_blank">Ver Apuntes (MD)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2011_Struct%20y%20union/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2011_Struct%20y%20union/Documentacion/Apuntes%20clase%20Struct%20y%20Union%20....md', 'Apuntes clase Struct y Union.md', 'md')">Ver Apuntes (MD)</button>
                 </div>
             </div>
         </div>
@@ -823,8 +824,8 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./actividad_12/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2012_Archivos/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2012_Archivos/Codigo/nombre.txt" target="_blank">Ver nombre.txt</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/Actividad%2012_Archivos/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://raw.githubusercontent.com/paolasainz6547-commits/Programacion_Estructurada/main/Actividad%2012_Archivos/Codigo/nombre.txt', 'nombre.txt', 'txt')">Ver nombre.txt</button>
                 </div>
             </div>
         </div>
@@ -864,8 +865,8 @@
                 </div>
                 <div class="body-btns">
                     <a class="btn btn-primary" href="./battleship/" target="_blank">Ver Código</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/battleship/Documentacion/BATTLESHIP%20(2).pdf" target="_blank">Ver Battleship (PDF)</a>
-                    <a class="btn btn-secondary" href="https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/battleship/Documentacion/Documentaci%C3%B3n.pdf" target="_blank">Ver Documentación (PDF)</a>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/battleship/Documentacion/BATTLESHIP%20(2).pdf&embedded=true', 'BATTLESHIP (2).pdf', 'pdf')">Ver Battleship (PDF)</button>
+                    <button class="btn btn-secondary" onclick="openViewer('https://docs.google.com/viewer?url=https://github.com/paolasainz6547-commits/Programacion_Estructurada/blob/main/battleship/Documentacion/Documentaci%C3%B3n.pdf&embedded=true', 'Documentación.pdf', 'pdf')">Ver Documentación (PDF)</button>
                 </div>
             </div>
         </div>
@@ -882,6 +883,64 @@
         const card = document.getElementById(id);
         card.classList.toggle('open');
     }
+</script>
+
+<div id="docModal" style="display:none; position:fixed; inset:0; background:rgba(0,0,0,.45); z-index:9999; align-items:center; justify-content:center; padding:1.5rem;">
+  <div style="background:#fff; border-radius:12px; width:100%; max-width:860px; max-height:90vh; display:flex; flex-direction:column; overflow:hidden; box-shadow:0 20px 60px rgba(0,0,0,.3);">
+    <div style="display:flex; align-items:center; justify-content:space-between; padding:.85rem 1.25rem; border-bottom:1px solid #e4e4e0;">
+      <span id="docModalTitle" style="font-family:'DM Sans',sans-serif; font-size:.9rem; font-weight:600; color:#1a1a18;"></span>
+      <button onclick="closeViewer()" style="background:none; border:1px solid #e4e4e0; border-radius:6px; padding:.3rem .7rem; cursor:pointer; font-size:.8rem; color:#888; font-family:sans-serif;">✕ Cerrar</button>
+    </div>
+    <div id="docModalBody" style="flex:1; overflow:auto; min-height:500px;"></div>
+  </div>
+</div>
+
+<script>
+function openViewer(url, filename, type) {
+  document.getElementById('docModalTitle').textContent = filename;
+  const body = document.getElementById('docModalBody');
+  const modal = document.getElementById('docModal');
+  modal.style.display = 'flex';
+  document.body.style.overflow = 'hidden';
+
+  if (type === 'pdf') {
+    body.innerHTML = '<iframe src="' + url + '" style="width:100%;height:600px;border:none;"></iframe>';
+  } else {
+    body.innerHTML = '<div style="padding:1.5rem; font-family:monospace; font-size:.83rem; color:#444;"><em>Cargando...</em></div>';
+    fetch(url)
+      .then(r => r.text())
+      .then(text => {
+        if (type === 'md') {
+          // Tu renderizador original de markdown corregido
+          let html = text
+            .replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')
+            .replace(/^### (.+)$/gm,'<h3 style="margin:1.2rem 0 .4rem;font-size:1rem;color:#1a1a18;">$1</h3>')
+            .replace(/^## (.+)$/gm,'<h2 style="margin:1.5rem 0 .5rem;font-size:1.15rem;color:#1a1a18;">$1</h2>')
+            .replace(/^# (.+)$/gm,'<h1 style="margin:1.5rem 0 .6rem;font-size:1.4rem;color:#1a1a18;">$1</h1>')
+            .replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>')
+            .replace(/`([^`]+)`/g,'<code style="background:#f0f0ee;padding:.15em .35em;border-radius:3px;font-size:.9em;">$1</code>')
+            .replace(/^- (.+)$/gm,'<li style="margin:.25rem 0;">$1</li>')
+            .replace(/\n\n/g,'<br><br>')
+            .replace(/\n/g,'<br>');
+          body.innerHTML = '<div style="padding:1.75rem 2rem;line-height:1.7;font-family:\'DM Sans\',sans-serif;font-size:.9rem;color:#333;max-width:720px;">' + html + '</div>';
+        } else {
+          // Plain text / txt
+          body.innerHTML = '<pre style="padding:1.75rem 2rem;font-family:JetBrains Mono,monospace;font-size:.82rem;line-height:1.65;color:#24292e;margin:0;white-space:pre-wrap;word-break:break-word;">' + text.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;') + '</pre>';
+        }
+      })
+      .catch(() => { body.innerHTML = '<div style="padding:2rem;color:#c0392b;font-family:monospace;font-size:.82rem;">⚠ No se pudo cargar el archivo. Verifica tu ruta.</div>'; });
+  }
+}
+
+function closeViewer() {
+  document.getElementById('docModal').style.display = 'none';
+  document.getElementById('docModalBody').innerHTML = '';
+  document.body.style.overflow = '';
+}
+
+document.getElementById('docModal').addEventListener('click', function(e) {
+  if (e.target === this) closeViewer();
+});
 </script>
 
 </body>
