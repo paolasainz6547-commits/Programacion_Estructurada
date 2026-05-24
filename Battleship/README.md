@@ -21,13 +21,9 @@ modo 2 jugadores, guardado de partidas, historial y exportación de resúmenes.
 Cada tablero es una matriz `int[3][3]` donde cada celda almacena un estado
 definido por macros:
 
-| Valor | Macro | Símbolo | Significado |
-|-------|-------|---------|-------------|
-| `0` | `AGUA` | `~` | Casilla vacía |
-| `1` | `BARCO` | `#` | Barco posicionado |
-| `2` | `FALLIDO` | `o` | Disparo al agua |
-| `3` | `IMPACTO` | `X` | Barco hundido |
-
+Cada celda almacena un valor entero que representa su estado:
+`0` (AGUA `~`) casilla vacía, `1` (BARCO `#`) barco posicionado,
+`2` (FALLIDO `o`) disparo al agua, y `3` (IMPACTO `X`) barco hundido.
 ## Modos de juego
 
 - **Modo 1 jugador:** El CPU coloca 3 barcos en posiciones fijas. El jugador
@@ -53,7 +49,7 @@ definido por macros:
 
 | Archivo | Contenido |
 |---------|-----------|
-| `partidas.dat` | Estado binario de todas las partidas (lectura/escritura con `fread`/`fwrite`) |
+| `partidas.dat` | Estado de todas las partidas (lectura/escritura con `fwrite`) |
 | `movimientos.txt` | Log de cada disparo con hora, jugador, coordenadas y resultado |
 | `resumen_<id>.txt` | Resumen final de la partida con tableros y ganador |
 
