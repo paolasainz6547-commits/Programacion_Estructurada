@@ -4,8 +4,8 @@
 // union comparte la misma memoria entre sus miembros
 union Barco
 {
-    int tripulacion;   // Miembro de tipo int (4 bytes)
-    float carga;       // Miembro de tipo float (4 bytes)
+    int tripulacion;   // Tipo int (4 bytes)
+    float carga;       // Tipo float (4 bytes)
 };
 
 int main()
