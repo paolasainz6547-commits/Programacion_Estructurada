@@ -37,8 +37,3 @@ gcc while.c -o while
 ./for
 ./while
 ```
-
-## Ejecución
-```bash
-./programa
-```
