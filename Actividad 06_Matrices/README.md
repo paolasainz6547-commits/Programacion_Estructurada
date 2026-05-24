@@ -16,7 +16,7 @@ de un juego completo de Batalla Naval ¨Battleship¨
 - Limpieza del buffer con `getchar`
 
 ## Ejercicios
-- **Ejercicio 1 Battleship:** Programa en C que demuestra el uso correcto de matrices, ciclos for anidados
+- **Ejercicio 1 (Battleship):** Programa en C que demuestra el uso correcto de matrices, ciclos for anidados
   para la elaboracion de un tablero para el juego Battleship, basado en el uso principal de matrices `int[5][5]`
   cada celda de la matriz representa un estado del tablero mediante valores enteros, 0 para casillas vacias, 1 para barco posicionado,
   2 para disparo fallido y 3 para impacto exitoso. 
@@ -35,10 +35,12 @@ de un juego completo de Batalla Naval ¨Battleship¨
 
 ## Compilación
 ```bash
-gcc matrices.c -o programa
+gcc battleship.c -o battleship
+gcc matrices.c -o matrices
 ```
 
 ## Ejecución
 ```bash
-./programa
+./battleship
+./matrices
 ```
