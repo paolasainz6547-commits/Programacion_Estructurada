@@ -22,7 +22,7 @@ de caracteres con operaciones son cadenas de caracteres.
 
 ## Ejercicios
 
-- **Ejericio 1 (arreglos_y_direcciones.c):** Programa que combina captura de cadenas, concatenación
+- **Codigo 1 (arreglos_y_direcciones.c):** Programa que combina captura de cadenas, concatenación
   y direcciones de memoria. Se capturan 4 nombres en `char lista[4][20]`
   con `fgets` y se concatenan en una sola cadena `NC` (Nombre completo) usando `strcat`, agregando espacios
   entre nombres pero no al final con `if (i < N - 1)`. Luego se imprimen las direcciones
@@ -31,7 +31,7 @@ de caracteres con operaciones son cadenas de caracteres.
   Finalmente con `int ArregloC[5]` se imprime el valor y dirección de cada
   elemento, evidenciando que los enteros se almacenan con 4 bytes de separación entre cada uno, debido al tamaño de un int (4 bytes).
 
-  - **Ejercicio 2 (funciones_strings.c):** Programa que demuestra tres formas de leer
+  **Codigo 2 (funciones_strings.c):** Programa que demuestra tres formas de leer
   y manejar cadenas en C.  El primer ejemplo usa `scanf`, que solo lee hasta el primer espacio, por lo que no captura
   nombre completo. El segundo ejemplo usa `fgets` para leer nombre y apellido completos, eliminando el `'\n'` automático
   con `strcspn`. El tercer ejemplo usa un arreglo bidimensional para registrar 4 jugadores
@@ -41,7 +41,7 @@ de caracteres con operaciones son cadenas de caracteres.
   un nombre de equipo completo usando `strcpy` para inicializar la cadena
   base y se usa `strcat` para concatenar los nombres de los 4 jugadores.
 
-- **Ejercicio 3 (tablero_y_strings.c):** Programa que combina matrices de caracteres con manejo de archivos.
+- **Codigo 3 (tablero_y_strings.c):** Programa que combina matrices de caracteres con manejo de archivos.
   Se declara `char tablero[5][5]` inicializada con `'~'` usando ciclos anidados, luego se
   asignan los caracteres `'B'`, `'X'` y `'O'` a celdas específicas por índice `[fila][columna]`
   y se imprime en consola. El nombre del usuario se lee con `fgets` y se limpia con `strcspn`.
