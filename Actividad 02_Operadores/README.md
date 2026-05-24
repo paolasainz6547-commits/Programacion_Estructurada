@@ -29,11 +29,13 @@ de incremento/decremento, relacionales y operador ternario.
 
 ## Compilación
 ```bash
-gcc main.c -o programa
+gcc main.c -o main
+gcc operadores.c -o operadores
 ```
 
 ## Ejecución
 ```bash
-./programa
+./main
+./operadores
 ```
 
