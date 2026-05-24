@@ -14,10 +14,10 @@ almacenar y manipular colecciones de datos del mismo tipo.
 
 ## Ejercicios aplicados en Arreglos
 
-- **Codigo 1 valores_arreglo:** Exploración de direcciones de memoria de variables y arreglos, utilizando el operador `&`
+- **Codigo 1 (valores_arreglo):** Exploración de direcciones de memoria de variables y arreglos, utilizando el operador `&`
 - y con %i para indicar que el dato es un número entero con signo,  acceso directo a elementos del arreglo con sus indices
 e ingreso de 4 temperaturas con un ciclo for, y con impresión de resultados
-- **Codigo 2 direcciones arreglos temperatura:** Arreglo de tamaño N definido por el usuario para almacenar
+- **Codigo 2 (direcciones arreglos temperatura):** Arreglo de tamaño N definido por el usuario para almacenar
   e imprimir temperaturas ingresadas dinámicamente
 
 ## Compilación
