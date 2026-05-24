@@ -12,7 +12,7 @@ almacenar y manipular colecciones de datos del mismo tipo.
 - Direcciones de memoria con `&`
 - Arreglos de tipo `float`
 
-## Ejercicios aplicadoe en Arreglos
+## Ejercicios aplicados en Arreglos
 
 - **Codigo 1 valores_arreglo:** Exploración de direcciones de memoria de variables y arreglos, utilizando el operador `&`
 - y con %i para indicar que el dato es un número entero con signo,  acceso directo a elementos del arreglo con sus indices
